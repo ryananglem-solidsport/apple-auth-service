@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "rm -r dist && mkdir dist && babel ./netlify/functions/auth.js -s -d dist"
+    "build-local": "rm -r dist && mkdir dist && babel ./index.js -s -d dist",
+    "build": "mkdir dist && babel ./index.js -s -d dist"
   },
   "author": "",
   "license": "ISC",
